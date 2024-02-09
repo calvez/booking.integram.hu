@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
     {
         User::create(
             [
-                'name'     => 'Admin',
-                'email'    => 'admin@example.com',
+                'name' => 'Admin',
+                'email' => 'admin@example.com',
                 'password' => bcrypt('password!'),
             ]
         );
@@ -33,16 +33,16 @@ class DatabaseSeeder extends Seeder
         }
         House::create(
             [
-                'name'        => 'House A',
+                'name' => 'House A',
                 'description' => 'Loram ipsum dolor sit amet, consectetur adipiscing elit.',
             ]
         );
         Reservation::create(
             [
-                'user_id'    => 1,
-                'house_id'   => 1,
+                'user_id' => 1,
+                'house_id' => 1,
                 'start_time' => now(),
-                'end_time'   => now()->addDays(7),
+                'end_time' => now()->addDays(7),
             ]
         );
     }
