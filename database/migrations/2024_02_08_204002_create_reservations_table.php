@@ -1,7 +1,6 @@
 <?php
 
 use App\Models\House;
-use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -17,7 +16,6 @@ return new class extends Migration
             'reservations',
             function (Blueprint $table) {
                 $table->id();
-                $table->foreignIdFor(User::class)->constrained()->cascadeOnDelete();
                 $table->foreignIdFor(House::class)->constrained()->cascadeOnDelete();
                 $table->datetime('start_time');
                 $table->datetime('end_time');

@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
                 'password' => bcrypt('password!'),
             ]
         );
-        $services = ['Track A', 'Track B', 'Track C', 'Track D', 'Track E'];
+        $services = ['services A', 'services B', 'services C', 'services D', 'services E'];
         foreach ($services as $name) {
             Feature::create(
                 ['name' => $name],
@@ -39,7 +39,6 @@ class DatabaseSeeder extends Seeder
         );
         Reservation::create(
             [
-                'user_id' => 1,
                 'house_id' => 1,
                 'start_time' => now(),
                 'end_time' => now()->addDays(7),

@@ -1,0 +1,1 @@
+../booking.integram.hu/vendor/bin/sail
