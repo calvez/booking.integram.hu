@@ -12,6 +12,14 @@ class Reservation extends Model
     use HasFactory;
 
     protected $fillable = [
+        'name',
+        'phone',
+        'email',
+        'postcode',
+        'city',
+        'address',
+        'hsz',
+        'hash',
         'user_id',
         'house_id',
         'start_date',

@@ -26,7 +26,7 @@
                 <div class="mx-auto w-full max-w-[550px] bg-white">
                     <form>
                         <label class="mb-5 block text-base font-semibold text-[#07074D] sm:text-xl">
-                            Foglalási adatok
+                            Foglalás
                         </label>
 
                         <div class="mb-5">
@@ -51,11 +51,9 @@
                             <div class="w-full px-3 sm:w-1/2">
                                 <div class="mb-5">
                                     <label for="date" class="mb-3 block text-base font-medium text-[#07074D]">
-                                        Érkezési dátum
+                                        Érkezés dátum
                                     </label>
-                                    <input type="date" name="start_date" id="start_date" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
-
-
+                                    <input type="date" name="date" id="date" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                                 </div>
                             </div>
                             <div class="w-full px-3 sm:w-1/2">
@@ -63,7 +61,7 @@
                                     <label for="time" class="mb-3 block text-base font-medium text-[#07074D]">
                                         Idő
                                     </label>
-                                    <input type="time" name="start_time" id="start_time" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                                    <input type="time" name="time" id="time" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                                 </div>
                             </div>
                         </div>
@@ -72,9 +70,9 @@
                             <div class="w-full px-3 sm:w-1/2">
                                 <div class="mb-5">
                                     <label for="date" class="mb-3 block text-base font-medium text-[#07074D]">
-                                        Távozási dátum
+                                        Távozás dátum
                                     </label>
-                                    <input type="date" name="end_date" id="end_date" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                                    <input type="date" name="date" id="date" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                                 </div>
                             </div>
                             <div class="w-full px-3 sm:w-1/2">
@@ -82,56 +80,11 @@
                                     <label for="time" class="mb-3 block text-base font-medium text-[#07074D]">
                                         Idő
                                     </label>
-                                    <input type="time" name="end_time" id="end_time" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                                    <input type="time" name="time" id="time" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                                 </div>
                             </div>
                         </div>
 
-                        <div class="mb-5 pt-3">
-                            <label class="mb-5 block text-base font-semibold text-[#07074D] sm:text-xl">
-                                Szolgáltatások
-                            </label>
-                            <div class="-mx-3 flex flex-wrap">
-                                <div class="mt-10 space-y-10">
-                                    <fieldset>
-                                        <legend class="text-sm font-semibold leading-6 text-gray-900">Kérjük válasszon szolgáltatást</legend>
-                                        <div class="mt-6 space-y-6">
-                                            <div class="relative flex gap-x-3">
-                                                <div class="flex h-6 items-center">
-                                                    <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                                                </div>
-                                                <div class="text-sm leading-6">
-                                                    <label for="comments" class="font-medium text-gray-900">Lovaglás</label>
-                                                    <p class="text-gray-500">A szolgáltatás rövid leírása.</p>
-                                                </div>
-                                            </div>
-                                            <div class="relative flex gap-x-3">
-                                                <div class="flex h-6 items-center">
-                                                    <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                                                </div>
-                                                <div class="text-sm leading-6">
-                                                    <label for="comments" class="font-medium text-gray-900">Hintó</label>
-                                                    <p class="text-gray-500">A szolgáltatás rövid leírása.</p>
-                                                </div>
-                                            </div>
-                                            <div class="relative flex gap-x-3">
-                                                <div class="flex h-6 items-center">
-                                                    <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                                                </div>
-                                                <div class="text-sm leading-6">
-                                                    <label for="comments" class="font-medium text-gray-900">Egyéb szolg.</label>
-                                                    <p class="text-gray-500">A szolgáltatás rövid leírása.</p>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </fieldset>
-
-                                </div>
-
-
-                            </div>
-                        </div>
 
                         <div class="mb-5 pt-3">
                             <label class="mb-5 block text-base font-semibold text-[#07074D] sm:text-xl">
@@ -141,7 +94,7 @@
 
                                 <div class="w-full px-3 sm:w-1/2">
                                     <div class="mb-5">
-                                        <input type="text" name="postcode" id="postcode" placeholder="Irányítószám" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                                        <input type="text" name="post-code" id="post-code" placeholder="Irányítószám" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
 
                                     </div>
                                 </div>
@@ -169,7 +122,7 @@
 
                         <div>
                             <button class="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none">
-                                Foglalás és fizetés
+                                Tovább
                             </button>
                         </div>
                     </form>

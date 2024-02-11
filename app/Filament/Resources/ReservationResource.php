@@ -18,6 +18,10 @@ class ReservationResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $label = 'Foglalás';
+
+    protected static ?string $pluralLabel = 'Foglalások';
+
     public static function form(Form $form): Form
     {
         return $form

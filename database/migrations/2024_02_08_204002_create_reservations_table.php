@@ -17,8 +17,16 @@ return new class extends Migration
             function (Blueprint $table) {
                 $table->id();
                 $table->foreignIdFor(House::class)->constrained()->cascadeOnDelete();
-                $table->datetime('start_time');
-                $table->datetime('end_time');
+                $table->string('name', 100)->nullable()->default('text');
+                $table->string('phone', 100)->nullable()->default('text');
+                $table->string('email', 100)->nullable()->default('text');
+                $table->datetime('start_date');
+                $table->datetime('end_date');
+                $table->string('postcode')->nullable()->default('text');
+                $table->string('city')->nullable()->default('text');
+                $table->string('address')->nullable()->default('text');
+                $table->string('hsz', 100)->nullable()->default('text');
+                $table->string('hash', 100)->nullable()->default(null);
                 $table->timestamps();
             }
         );

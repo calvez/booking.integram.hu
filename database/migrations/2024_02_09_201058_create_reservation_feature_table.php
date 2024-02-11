@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('reservation_feature', function (Blueprint $table) {
             $table->foreignId('reservation_id');
             $table->foreignId('feature_id');
+            $table->datetime('time');
             $table->primary(['reservation_id', 'feature_id']);
         });
     }
