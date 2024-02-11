@@ -37,21 +37,23 @@ class DatabaseSeeder extends Seeder
                 'description' => 'Loram ipsum dolor sit amet, consectetur adipiscing elit.',
             ]
         );
-        Reservation::create(
-            [
-                'name' => 'test user',
-                'phone' => '123456789',
-                'email' => 'test@mail.com',
-                'postcode' => '1234',
-                'city' => 'test city',
-                'address' => 'test address',
-                'hsz' => 'test hsz', // 'hsz' stands for 'house number', 'house number' is 'házszám' in Hungarian
-                'hash' => 'test hash', // 'hash' is a unique identifier for the reservation, it's like a 'token' or 'key                
-                'house_id' => 1,
-                'start_date' => now(),
-                'end_date' => now()->addDays(7),
+        for ($i = 0; $i < 35; $i++) {
+            Reservation::create(
+                [
+                    'name' => 'test user' . $i . '',
+                    'phone' => '12345678' . $i . '',
+                    'email' => 'test' . $i . '@mail.com',
+                    'postcode' => $i . '234',
+                    'city' => 'test city' . $i,
+                    'address' => 'test address' . $i,
+                    'hsz' => 'test' . $i . ' hsz', // 'hsz' stands for 'house number', 'house number' is 'házszám' in Hungarian
+                    'hash' => 'test' . $i . ' hash', // 'hash' is a unique identifier for the reservation, it's like a 'token' or 'key                
+                    'house_id' => 1,
+                    'start_date' => now(),
+                    'end_date' => now()->addDays(7 + $i),
 
-            ]
-        );
+                ]
+            );
+        }
     }
 }

@@ -27,10 +27,16 @@ class ReservationResource extends Resource
         return $form
             ->schema(
                 [
-                    TextInput::make('user_id'),
                     TextInput::make('house_id'),
                     DateTimePicker::make('start_date'),
                     DateTimePicker::make('end_date'),
+                    TextInput::make('name'),
+                    TextInput::make('phone'),
+                    TextInput::make('postcode'),
+                    TextInput::make('address'),
+                    TextInput::make('hsz'),
+                    TextInput::make('hash'),
+
                 ]
             );
     }
@@ -40,7 +46,12 @@ class ReservationResource extends Resource
         return $table
             ->columns(
                 [
-                    TextColumn::make('user_id'),
+                    TextColumn::make('name'),
+                    TextColumn::make('phone'),
+                    TextColumn::make('postcode'),
+                    TextColumn::make('address'),
+                    TextColumn::make('hsz'),
+                    TextColumn::make('hash'),
                     TextColumn::make('house_id'),
                     TextColumn::make('start_date'),
                     TextColumn::make('end_date'),
