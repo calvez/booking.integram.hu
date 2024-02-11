@@ -98,28 +98,39 @@
                                         <div class="mt-6 space-y-6">
                                             <div class="relative flex gap-x-3">
                                                 <div class="flex h-6 items-center">
-                                                    <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                                                    <input id="horse" name="horse" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+
+
                                                 </div>
                                                 <div class="text-sm leading-6">
-                                                    <label for="comments" class="font-medium text-gray-900">Lovaglás</label>
+                                                    <label for="horse" class="font-medium text-gray-900">Lovaglás</label>
+                                                    <p class="text-gray-500">A szolgáltatás ára</p>
+
                                                     <p class="text-gray-500">A szolgáltatás rövid leírása.</p>
                                                 </div>
                                             </div>
                                             <div class="relative flex gap-x-3">
                                                 <div class="flex h-6 items-center">
-                                                    <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                                                    <input id="hinto" name="hinto" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+
                                                 </div>
                                                 <div class="text-sm leading-6">
-                                                    <label for="comments" class="font-medium text-gray-900">Hintó</label>
+                                                    <label for="hinto" class="font-medium text-gray-900">Hintó</label>
+                                                    <p class="text-gray-500">A szolgáltatás ára</p>
+
                                                     <p class="text-gray-500">A szolgáltatás rövid leírása.</p>
                                                 </div>
                                             </div>
                                             <div class="relative flex gap-x-3">
                                                 <div class="flex h-6 items-center">
-                                                    <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                                                    <input id="egyeb" name="egyeb" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+
+
                                                 </div>
                                                 <div class="text-sm leading-6">
-                                                    <label for="comments" class="font-medium text-gray-900">Egyéb szolg.</label>
+                                                    <label for="egyeb" class="font-medium text-gray-900">Egyéb szolg.</label>
+                                                    <p class="text-gray-500">A szolgáltatás ára</p>
+
                                                     <p class="text-gray-500">A szolgáltatás rövid leírása.</p>
                                                 </div>
                                             </div>

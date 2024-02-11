@@ -17,7 +17,11 @@ class HouseResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $navigationGroup = 'Settings';
+    protected static ?string $navigationGroup = 'Beállítások';
+
+    protected static ?string $label = 'Ház';
+
+    protected static ?string $pluralLabel = 'Házak';
 
     public static function form(Form $form): Form
     {

@@ -19,6 +19,10 @@ class FeatureResource extends Resource
 
     protected static ?string $navigationGroup = 'Beállítások';
 
+    protected static ?string $label = 'Szolgálatás';
+
+    protected static ?string $pluralLabel = 'Szolgálatások';
+
     public static function form(Form $form): Form
     {
         return $form
@@ -36,6 +40,12 @@ class FeatureResource extends Resource
         return $table
             ->columns(
                 [
+                    TextColumn::make('name'),
+                    TextColumn::make('description'),
+                    TextColumn::make('name'),
+                    TextColumn::make('description'),
+                    TextColumn::make('name'),
+                    TextColumn::make('description'),
                     TextColumn::make('name'),
                     TextColumn::make('description'),
                 ]
