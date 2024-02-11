@@ -39,9 +39,18 @@ class DatabaseSeeder extends Seeder
         );
         Reservation::create(
             [
+                'name' => 'test user',
+                'phone' => '123456789',
+                'email' => 'test@mail.com',
+                'postcode' => '1234',
+                'city' => 'test city',
+                'address' => 'test address',
+                'hsz' => 'test hsz', // 'hsz' stands for 'house number', 'house number' is 'házszám' in Hungarian
+                'hash' => 'test hash', // 'hash' is a unique identifier for the reservation, it's like a 'token' or 'key                
                 'house_id' => 1,
-                'start_time' => now(),
-                'end_time' => now()->addDays(7),
+                'start_date' => now(),
+                'end_date' => now()->addDays(7),
+
             ]
         );
     }
